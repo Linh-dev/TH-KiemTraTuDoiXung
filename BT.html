@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem Tra Tu Doi Xung</title>
+</head>
+<body>
+<script>
+    let str = prompt("Import string:");
+    function isPalindrome(s){
+        let a;
+        for (let i = 0; i<((s.length)/2); i++){
+            if (s[i] === s[(s.length-1)-i]){
+                a = true;
+
+            }else {
+                a = false;
+                break;
+            }
+        }
+        return a;
+    }
+
+    let kiemtra = isPalindrome(str);
+    console.log(kiemtra);
+    if (kiemtra===true){
+        alert("Đây là từ đối xứng!");
+    }else {
+        alert("Đây là từ không đối xứng!");
+    }
+</script>
+</body>
+</html>
